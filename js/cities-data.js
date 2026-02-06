@@ -226,6 +226,201 @@ const CITIES_DATA = {
     direccionAyuntamiento: "Calle Corredera de San Marcos, 1 - 23700 Linares (Jaén)",
     telefonoAyuntamiento: "953 64 90 00",
     ultimaActualizacion: "2025"
+  },
+
+  "aranjuez": {
+    nombre: "Aranjuez",
+    slug: "aranjuez",
+    provincia: "Madrid",
+    comunidad: "Comunidad de Madrid",
+    poblacion: 59000,
+
+    coeficientes: { ...COEFICIENTES_MAXIMOS_2025 },
+    tipoImpositivo: 30,
+
+    bonificaciones: {
+      herenciaConyuge: {
+        aplicable: true,
+        porcentaje: 50,
+        descripcion: "Herencia al cónyuge de vivienda habitual"
+      },
+      herenciaDescendientes: {
+        aplicable: true,
+        porcentaje: 50,
+        descripcion: "Herencia a hijos o nietos de vivienda habitual"
+      },
+      viviendaHabitual: {
+        aplicable: true,
+        porcentaje: 50,
+        descripcion: "Transmisión mortis causa de vivienda habitual"
+      }
+    },
+
+    plazoVoluntario: {
+      compraventa: 30,
+      herencia: 6
+    },
+
+    urlAyuntamiento: "https://www.aranjuez.es/",
+    direccionAyuntamiento: "Plaza de la Constitución, 1 - 28300 Aranjuez (Madrid)",
+    telefonoAyuntamiento: "918 91 13 47",
+    ultimaActualizacion: "2025"
+  },
+
+  "lucena": {
+    nombre: "Lucena",
+    slug: "lucena",
+    provincia: "Córdoba",
+    comunidad: "Andalucía",
+    poblacion: 43000,
+
+    coeficientes: { ...COEFICIENTES_MAXIMOS_2025 },
+    tipoImpositivo: 30,
+
+    bonificaciones: {
+      herenciaConyuge: {
+        aplicable: true,
+        porcentaje: 50,
+        descripcion: "Herencia al cónyuge de vivienda habitual"
+      },
+      herenciaDescendientes: {
+        aplicable: true,
+        porcentaje: 50,
+        descripcion: "Herencia a hijos o nietos de vivienda habitual"
+      },
+      viviendaHabitual: {
+        aplicable: true,
+        porcentaje: 50,
+        descripcion: "Transmisión mortis causa de vivienda habitual"
+      }
+    },
+
+    plazoVoluntario: {
+      compraventa: 30,
+      herencia: 6
+    },
+
+    urlAyuntamiento: "https://www.lucena.es/",
+    direccionAyuntamiento: "Plaza Nueva, 1 - 14900 Lucena (Córdoba)",
+    telefonoAyuntamiento: "957 50 28 00",
+    ultimaActualizacion: "2025"
+  },
+
+  "utrera": {
+    nombre: "Utrera",
+    slug: "utrera",
+    provincia: "Sevilla",
+    comunidad: "Andalucía",
+    poblacion: 52000,
+
+    coeficientes: { ...COEFICIENTES_MAXIMOS_2025 },
+    tipoImpositivo: 30,
+
+    bonificaciones: {
+      herenciaConyuge: {
+        aplicable: true,
+        porcentaje: 50,
+        descripcion: "Herencia al cónyuge de vivienda habitual"
+      },
+      herenciaDescendientes: {
+        aplicable: true,
+        porcentaje: 50,
+        descripcion: "Herencia a hijos o nietos de vivienda habitual"
+      },
+      viviendaHabitual: {
+        aplicable: true,
+        porcentaje: 50,
+        descripcion: "Transmisión mortis causa de vivienda habitual"
+      }
+    },
+
+    plazoVoluntario: {
+      compraventa: 30,
+      herencia: 6
+    },
+
+    urlAyuntamiento: "https://www.utrera.org/",
+    direccionAyuntamiento: "Plaza de Gibaxa, 1 - 41710 Utrera (Sevilla)",
+    telefonoAyuntamiento: "955 86 00 00",
+    ultimaActualizacion: "2025"
+  },
+
+  "hellin": {
+    nombre: "Hellín",
+    slug: "hellin",
+    provincia: "Albacete",
+    comunidad: "Castilla-La Mancha",
+    poblacion: 30000,
+
+    coeficientes: { ...COEFICIENTES_MAXIMOS_2025 },
+    tipoImpositivo: 30,
+
+    bonificaciones: {
+      herenciaConyuge: {
+        aplicable: true,
+        porcentaje: 50,
+        descripcion: "Herencia al cónyuge de vivienda habitual"
+      },
+      herenciaDescendientes: {
+        aplicable: true,
+        porcentaje: 50,
+        descripcion: "Herencia a hijos o nietos de vivienda habitual"
+      },
+      viviendaHabitual: {
+        aplicable: true,
+        porcentaje: 50,
+        descripcion: "Transmisión mortis causa de vivienda habitual"
+      }
+    },
+
+    plazoVoluntario: {
+      compraventa: 30,
+      herencia: 6
+    },
+
+    urlAyuntamiento: "https://www.hellin.es/",
+    direccionAyuntamiento: "Plaza de la Iglesia, 1 - 02400 Hellín (Albacete)",
+    telefonoAyuntamiento: "967 30 00 50",
+    ultimaActualizacion: "2025"
+  },
+
+  "tomelloso": {
+    nombre: "Tomelloso",
+    slug: "tomelloso",
+    provincia: "Ciudad Real",
+    comunidad: "Castilla-La Mancha",
+    poblacion: 36000,
+
+    coeficientes: { ...COEFICIENTES_MAXIMOS_2025 },
+    tipoImpositivo: 30,
+
+    bonificaciones: {
+      herenciaConyuge: {
+        aplicable: true,
+        porcentaje: 50,
+        descripcion: "Herencia al cónyuge de vivienda habitual"
+      },
+      herenciaDescendientes: {
+        aplicable: true,
+        porcentaje: 50,
+        descripcion: "Herencia a hijos o nietos de vivienda habitual"
+      },
+      viviendaHabitual: {
+        aplicable: true,
+        porcentaje: 50,
+        descripcion: "Transmisión mortis causa de vivienda habitual"
+      }
+    },
+
+    plazoVoluntario: {
+      compraventa: 30,
+      herencia: 6
+    },
+
+    urlAyuntamiento: "https://www.tomelloso.es/",
+    direccionAyuntamiento: "Plaza de España, 1 - 13700 Tomelloso (Ciudad Real)",
+    telefonoAyuntamiento: "926 50 42 00",
+    ultimaActualizacion: "2025"
   }
 };
 

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora Plusvalía Municipal Talavera de la Reina 2026 | Calcula Gratis</title>
+  <meta name="description" content="Calcula gratis la plusvalía municipal en Talavera de la Reina. Simulador actualizado 2026 con los coeficientes oficiales del Ayuntamiento de Talavera de la Reina.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://plusvalia-municipal.pages.dev/talavera-de-la-reina/">
+  <meta property="og:title" content="Calculadora Plusvalía Municipal Talavera de la Reina 2026">
+  <meta property="og:description" content="Calcula gratis la plusvalía municipal en Talavera de la Reina. Simulador actualizado con coeficientes oficiales.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://plusvalia-municipal.pages.dev/talavera-de-la-reina/">
+  <link rel="icon" href="../img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../css/styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Calculadora Plusvalía Municipal Talavera de la Reina",
+    "description": "Calculadora gratuita del impuesto de plusvalía municipal en Talavera de la Reina",
+    "applicationCategory": "FinanceApplication",
+    "operatingSystem": "Web",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "EUR"
+    },
+    "author": {
+      "@type": "Organization",
+      "name": "Calculadora Plusvalía"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="../index.html" class="site-logo">
+        <svg viewBox="0 0 28 28" fill="none"><rect width="28" height="28" rx="6" fill="#fff" fill-opacity="0.15"/><path d="M7 20V8h2v10h4V8h2v10h4V8h2v12H7z" fill="#fff"/></svg>
+        Calculadora Plusvalía
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Menú">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+      <nav class="site-nav" id="site-nav">
+        <a href="../index.html">Inicio</a>
+        <a href="../como-funciona.html">Cómo funciona</a>
+        <a href="../preguntas-frecuentes.html">FAQ</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="../index.html">Inicio</a> <span>&rsaquo;</span> Talavera de la Reina
+      </div>
+      <h1>Calculadora de Plusvalía Municipal en Talavera de la Reina</h1>
+      <p>Calcula de forma gratuita el impuesto de plusvalía municipal con los coeficientes oficiales del Ayuntamiento de Talavera de la Reina.</p>
+    </div>
+  </section>
+
+  <!-- Calculadora -->
+  <main class="calculator-section">
+    <div class="container">
+
+      <div class="calculator-card">
+        <h2>Calcula tu plusvalía</h2>
+
+        <form id="calculator-form" data-city="talavera-de-la-reina">
+
+          <div class="form-group">
+            <label for="tipo-transmision">Tipo de transmisión</label>
+            <select id="tipo-transmision">
+              <option value="compraventa">Compraventa</option>
+              <option value="herencia">Herencia o donación</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="valor-adquisicion">Valor de adquisición (compra) <span class="label-help">en euros</span></label>
+              <input type="number" id="valor-adquisicion" placeholder="Ej: 120000" min="0" step="0.01" required>
+            </div>
+            <div class="form-group">
+              <label for="valor-transmision">Valor de transmisión (venta) <span class="label-help">en euros</span></label>
+              <input type="number" id="valor-transmision" placeholder="Ej: 180000" min="0" step="0.01" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fecha-adquisicion">Fecha de adquisición</label>
+              <input type="date" id="fecha-adquisicion" required>
+            </div>
+            <div class="form-group">
+              <label for="fecha-transmision">Fecha de transmisión</label>
+              <input type="date" id="fecha-transmision" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="valor-catastral-suelo">Valor catastral del suelo <span class="label-help">recibo IBI</span></label>
+              <input type="number" id="valor-catastral-suelo" placeholder="Ej: 40000" min="0" step="0.01">
+            </div>
+            <div class="form-group">
+              <label for="valor-catastral-total">Valor catastral total <span class="label-help">recibo IBI (opcional)</span></label>
+              <input type="number" id="valor-catastral-total" placeholder="Ej: 80000" min="0" step="0.01">
+            </div>
+          </div>
+
+          <div id="bonificaciones-group" style="display:none;">
+            <div class="form-group">
+              <label>Bonificaciones aplicables</label>
+              <div class="checkbox-group">
+                <label class="checkbox-label">
+                  <input type="checkbox" id="bonif-vivienda">
+                  Es la vivienda habitual del fallecido
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" id="bonif-conyuge">
+                  Transmisión al cónyuge
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" id="bonif-descendiente">
+                  Transmisión a hijos o nietos
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <button type="submit" class="btn-calculate">Calcular plusvalía</button>
+        </form>
+      </div>
+
+      <!-- Resultado -->
+      <div id="result-card" class="result-card"></div>
+
+      <!-- Ad slot -->
+      <div class="ad-slot">Espacio publicitario</div>
+
+      <!-- Contenido SEO -->
+      <section class="content-section">
+        <h2>¿Cómo se calcula la plusvalía municipal en Talavera de la Reina?</h2>
+        <p>El Impuesto sobre el Incremento de Valor de los Terrenos de Naturaleza Urbana (IIVTNU), conocido como <strong>plusvalía municipal</strong>, es un impuesto que grava el aumento de valor del suelo urbano cuando se transmite una propiedad, ya sea por compraventa, herencia o donación.</p>
+
+        <p>Desde la reforma introducida por el <strong>Real Decreto-ley 26/2021</strong>, el contribuyente puede elegir el método de cálculo que le resulte más favorable entre dos opciones:</p>
+
+        <h3>Método Objetivo</h3>
+        <p>Se multiplica el <strong>valor catastral del suelo</strong> (que aparece en el recibo del IBI) por un <strong>coeficiente</strong> establecido por el Ayuntamiento de Talavera de la Reina, según los años transcurridos desde la adquisición. El resultado es la base imponible, sobre la que se aplica el tipo impositivo del <strong>30%</strong>.</p>
+
+        <h3>Método Real</h3>
+        <p>Se calcula la diferencia entre el valor de transmisión y el valor de adquisición, aplicando la proporción que el valor del suelo representa sobre el valor catastral total. Si no hay incremento de valor, <strong>no se paga plusvalía</strong>.</p>
+
+        <p>Nuestra calculadora compara automáticamente ambos métodos y muestra el resultado más favorable para usted.</p>
+      </section>
+
+      <section class="content-section">
+        <h2>Coeficientes aplicables en Talavera de la Reina (2025)</h2>
+        <p>Los coeficientes vigentes en el Ayuntamiento de Talavera de la Reina para el cálculo de la plusvalía municipal por el método objetivo son:</p>
+
+        <table class="info-table">
+          <thead>
+            <tr>
+              <th>Periodo (años)</th>
+              <th>Coeficiente</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>0,14</td></tr>
+            <tr><td>2</td><td>0,13</td></tr>
+            <tr><td>3</td><td>0,15</td></tr>
+            <tr><td>4</td><td>0,15</td></tr>
+            <tr><td>5</td><td>0,17</td></tr>
+            <tr><td>6</td><td>0,17</td></tr>
+            <tr><td>7</td><td>0,17</td></tr>
+            <tr><td>8</td><td>0,12</td></tr>
+            <tr><td>9</td><td>0,11</td></tr>
+            <tr><td>10</td><td>0,10</td></tr>
+            <tr><td>11</td><td>0,09</td></tr>
+            <tr><td>12</td><td>0,09</td></tr>
+            <tr><td>13</td><td>0,09</td></tr>
+            <tr><td>14</td><td>0,09</td></tr>
+            <tr><td>15</td><td>0,09</td></tr>
+            <tr><td>16</td><td>0,09</td></tr>
+            <tr><td>17</td><td>0,08</td></tr>
+            <tr><td>18</td><td>0,08</td></tr>
+            <tr><td>19</td><td>0,08</td></tr>
+            <tr><td>20</td><td>0,08</td></tr>
+          </tbody>
+        </table>
+        <p>El tipo impositivo aplicable es del <strong>30%</strong> sobre la base imponible.</p>
+      </section>
+
+      <section class="content-section">
+        <h2>Bonificaciones disponibles en Talavera de la Reina</h2>
+        <p>El Ayuntamiento de Talavera de la Reina contempla las siguientes bonificaciones sobre la cuota del impuesto para transmisiones por herencia:</p>
+        <ul>
+          <li><strong>Transmisión al cónyuge</strong> de la vivienda habitual: bonificación del 50%.</li>
+          <li><strong>Transmisión a hijos o nietos</strong> de la vivienda habitual: bonificación del 50%.</li>
+        </ul>
+        <p>Estas bonificaciones se aplican únicamente cuando la transmisión es <em>mortis causa</em> (por fallecimiento) y el inmueble constituía la vivienda habitual del causante.</p>
+      </section>
+
+      <section class="content-section">
+        <h2>Plazos para pagar la plusvalía en Talavera de la Reina</h2>
+        <ul>
+          <li><strong>Compraventa o donación:</strong> 30 días hábiles desde la fecha de la escritura.</li>
+          <li><strong>Herencia:</strong> 6 meses desde el fallecimiento, prorrogables por otros 6 meses si se solicita dentro del plazo inicial.</li>
+        </ul>
+        <p>Fuera de plazo se aplican recargos e intereses de demora. Es recomendable no demorar el trámite.</p>
+      </section>
+
+      <section class="content-section">
+        <h2>Información del Ayuntamiento de Talavera de la Reina</h2>
+        <ul>
+          <li><strong>Dirección:</strong> Plaza del Pan, 1 - 45600 Talavera de la Reina (Toledo)</li>
+          <li><strong>Teléfono:</strong> 925 72 00 00</li>
+          <li><strong>Web:</strong> <a href="https://www.talavera.es/" target="_blank" rel="noopener">www.talavera.es</a></li>
+        </ul>
+      </section>
+
+      <div class="disclaimer">
+        <strong>Aviso importante:</strong> Este cálculo es orientativo y se basa en la ordenanza fiscal vigente del Ayuntamiento de Talavera de la Reina (última actualización: 2025). Para obtener el importe exacto, consulte directamente con el Ayuntamiento o con un asesor fiscal. No nos hacemos responsables de posibles discrepancias.
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-links">
+        <a href="../legal/aviso-legal.html">Aviso Legal</a>
+        <a href="../legal/privacidad.html">Privacidad</a>
+        <a href="../legal/cookies.html">Cookies</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 Calculadora Plusvalía Municipal. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Cookie Banner -->
+  <div class="cookie-banner" id="cookie-banner">
+    <div class="cookie-inner">
+      <p>Utilizamos cookies propias y de terceros para analizar el tráfico y mostrar publicidad. <a href="../legal/cookies.html">Más información</a>.</p>
+      <div class="cookie-btns">
+        <button class="btn-cookie btn-cookie-accept" id="cookie-accept">Aceptar</button>
+        <button class="btn-cookie btn-cookie-reject" id="cookie-reject">Rechazar</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/cities-data.js"></script>
+  <script src="../js/calculator.js"></script>
+</body>
+</html>
